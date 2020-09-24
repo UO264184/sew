@@ -1,12 +1,23 @@
 body {
-      font: 400 15px Tahoma, sans-serif; /*Familia sans-serif*/
-      line-height: 1.8;
-      color: #818181;
+      font: 400 15px Courier New, sans-serif; /*Familia sans-serif*/
+      line-height: 1.5;
+      background-color: #000000;
+      color: #fff
   }
-h1 {
-      background-color:#FF5733;
+
+header {
+  background-color: #FEDC3D;
+  color: #000
+  border-radius: 27px 27px 27px 27px;
+  -moz-border-radius: 27px 27px 27px 27px;
+  -webkit-border-radius: 27px 27px 27px 27px;
+  border: 0px solid #000000;
+  padding-left: 80px
+}
+h2 {
+      background-color:#01ABAA;
       color: #fff;
       text-transform: uppercase;
-      padding: 100px 25px;
-      text-align: center;
+      padding: 25px 15px;
+      text-align: left;
   }
