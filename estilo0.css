@@ -15,7 +15,7 @@ header {
   padding-left: 80px
 }
 
-aside {
+#sidebar {
 float: left;
   border: 1px solid red;
   width: 200px;
@@ -26,12 +26,14 @@ aside {
   border: 1px solid red;
 }
 
-nav {
+.navBar {
   overflow: hidden;
   background-color: #EFB810;
-  position: sticky;
+  position: -webkit-sticky; /* Safari */
+position: sticky;
 }
-nav a {
+
+.navBar a {
   float: left;
   display: block;
   color: #000;
@@ -40,33 +42,25 @@ nav a {
   text-decoration: underline;
 }
 
-nav a:hover {
+.navBar a:hover {
   background-color: #000;
   color: #FFF;
 }
 
-.title{
+.title {
   color: #000;
   background-color: #EFB810;
   text-transform: uppercase;
-  float: left;
   padding: 25px 15px;
   text-align: left;
-}
-
-.title h1{
-  background-color:#EFB810;
-  color: #000;
-  text-transform: uppercase;
 }
 
 .tabla_ost, th, tr{
   border-bottom: 1px solid #ddd;
 }
-.tabla_ost tr:hoover{
+.tabla_ost, tr:hover{
   background-color: #01ABAA;
 }
-
 
 
 
