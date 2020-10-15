@@ -1,79 +1,81 @@
-body {
-      font: 400 15px Courier New, sans-serif; /*Familia sans-serif*/
+  body {
+      font: 400 15px "Courier New", sans-serif; /*Familia sans-serif*/
       line-height: 1.5;
       background-color: #000000;
       color: #fff
   }
 
-header {
-  background-color: #EFB810;
-  color: #000
-  border-radius: 27px 27px 27px 27px;
-  -moz-border-radius: 27px 27px 27px 27px;
-  -webkit-border-radius: 27px 27px 27px 27px;
-  border: 0px solid #000000;
-  padding-left: 80px
-}
+  a{
+    font-style: italic;
+    color: #fff;
+  }
 
-aside {
-float: left;
-  border: 1px solid red;
-  width: 200px;
-}
-aside {
-  position: fixed;
-  top: 20px;
-  border: 1px solid red;
-}
+  h1,h2,h3,h4,h5,h6 {
+        background-color:#01ABAA;
+        color: #fff;
+        text-transform: uppercase;
+        padding: 25px 15px;
+        text-align: left;
+    }
 
+  .grid-container {
+    display: grid;
+    grid-template-columns:  0.15fr 0.5fr 0.5fr;
+    grid-template-rows: 0.25fr 0.5fr 0.25fr 0.75fr 0.75fr 0.25fr;
+    gap: 1em 0em;
+    grid-template-areas:
+      "title nav nav"
+      "title intro intro"
+      "aside intro intro"
+      "aside argmt argmt"
+      "aside prota ost"
+      "footer footer footer";
+  }
+
+  .mainTitle, .mainTitle>h1 {
+     grid-area: title;
+     color: #000;
+     background-color: #EFB810;
+     text-transform: uppercase;
+     text-align: center;
+  }
+
+  .intro { grid-area: intro; }
+  .argmt { grid-area: argmt; }
+  .nav { grid-area: nav; }
+  .prota { grid-area: prota; }
+  .ost { grid-area: ost; }
+  footer { grid-area: footer; }
+
+  aside, aside>h4  {
+    grid-area: aside;
+    border-radius: 2em;
+    background-color: #FEA680;
+    color: #000;
+    font-size: 1.5em;
+  }
 nav {
+  font-size: 1.15em;
   overflow: hidden;
   background-color: #EFB810;
-  position: sticky;
 }
-nav a {
+nav>a {
   float: left;
   display: block;
   color: #000;
   text-align: center;
-  padding: 15px 15px;
+  padding: 2.5em 2em;
   text-decoration: underline;
 }
 
-nav a:hover {
+nav>a:hover {
   background-color: #000;
   color: #FFF;
 }
 
-.title{
-  color: #000;
-  background-color: #EFB810;
-  text-transform: uppercase;
-  float: left;
-  padding: 25px 15px;
-  text-align: left;
-}
-
-.title h1{
-  background-color:#EFB810;
-  color: #000;
-  text-transform: uppercase;
-}
-
-.tabla_ost, th, tr{
+table, th, tr{
   border-bottom: 1px solid #ddd;
 }
-.tabla_ost tr:hoover{
+table tr:hover{
   background-color: #01ABAA;
 }
-
-
-
-
-h1,h2,h3,h4,h5,h6 {
-      background-color:#01ABAA;
-      color: #fff;
-      text-transform: uppercase;
-      padding: 25px 15px;
-      text-align: left;
-  }

@@ -1,0 +1,68 @@
+header, h1{
+  background-color: #EFB810;
+  color: #000;
+  border: 0px solid #000000;
+}
+
+#separador {
+  background-color: #EFB810;
+  color: #000;
+  border: 0px solid #000000;
+}
+
+.reseña>h3, .reseña>h5{
+    font-size: 1.25;
+}
+
+.reseña  {
+  margin: 2em 22.5% 2em;
+  box-sizing: content-box;
+  border-radius: 2em;
+  background-color: #FEA680;
+  color: #000;
+  font-size: 1.15em;
+  padding-bottom: 1em;
+  width: 50%
+}
+.puntuacion{
+  text-align: center;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+
+.recomend{
+  margin: 2em 22.5% 2em;
+  border: 5px solid #FEA680;
+  padding: 1em 2.5% 2em;
+  box-sizing: content-box;
+  width: 50%;
+  float: left;
+}
+.recomend img {
+  width: 20%;
+  height: auto;
+}
+.info {
+  padding: 1%;
+  width: 75%;
+  height: auto;
+  border: 4px solid white;
+  float: right;
+}
+
+video {
+  width: 60%;  
+  height: auto;
+  margin: 2em 20% 2em;
+}
+
+
+
+#intro {
+  text-align: center;
+}
+
+footer{
+  float: left;
+  padding-top: 2em;
+}
