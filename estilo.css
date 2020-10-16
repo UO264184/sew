@@ -32,7 +32,7 @@
       "footer footer footer";
   }
 
-  .mainTitle, .mainTitle>h1 {
+  header, header>h1 {
      grid-area: title;
      color: #000;
      background-color: #EFB810;
