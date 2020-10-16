@@ -42,7 +42,6 @@
 
   .intro { grid-area: intro; }
   .argmt { grid-area: argmt; }
-  .nav { grid-area: nav; }
   .prota { grid-area: prota; }
   .ost { grid-area: ost; }
   footer { grid-area: footer; }
@@ -55,6 +54,7 @@
     font-size: 1.5em;
   }
 nav {
+  grid-area: nav;
   font-size: 1.15em;
   overflow: hidden;
   background-color: #EFB810;
