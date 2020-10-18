@@ -1,16 +1,16 @@
-  body {
+  body { /*especificidad  0 0 1*/
       font: 400 15px "Courier New", sans-serif; /*Familia sans-serif*/
       line-height: 1.5;
       background-color: #000000;
       color: #fff
   }
 
-  a{
+  a{  /*especificidad  0 0 1*/
     font-style: italic;
     color: #fff;
   }
 
-  h1,h2,h3,h4,h5,h6 {
+  h1, h2, h3, h4, h5, h6 { /*especificidad  0 0 1 para cada uno de los seis elementos*/
         background-color:#01ABAA;
         color: #fff;
         text-transform: uppercase;
@@ -18,13 +18,13 @@
         text-align: left;
     }
 
-  .grid-container {
+  .grid-container {/*especificidad  0 1 0*/
     display: grid;
     grid-template-columns:  0.15fr 0.5fr 0.5fr;
     grid-template-rows: 0.25fr 0.5fr 0.25fr 0.75fr 0.75fr 0.25fr;
     gap: 1em 0em;
     grid-template-areas:
-      "title nav nav"
+      "title nav nav "
       "title intro intro"
       "aside intro intro"
       "aside argmt argmt"
@@ -32,50 +32,49 @@
       "footer footer footer";
   }
 
-  header, header>h1 {
+  header, header>h1 {/*especificidad  0 0 1 , 0 0 2*/ 
      grid-area: title;
      color: #000;
      background-color: #EFB810;
      text-transform: uppercase;
      text-align: center;
   }
+  .intro { grid-area: intro; }  /*especificidad  0 1 0*/
+  .argmt { grid-area: argmt; }  /*especificidad  0 1 0*/
+  .prota { grid-area: prota; }  /*especificidad  0 1 0*/
+  .ost { grid-area: ost; }      /*especificidad  0 1 0*/
+  footer { grid-area: footer; } /*especificidad  0 1 0*/
 
-  .intro { grid-area: intro; }
-  .argmt { grid-area: argmt; }
-  .prota { grid-area: prota; }
-  .ost { grid-area: ost; }
-  footer { grid-area: footer; }
-
-  aside, aside>h4  {
+  aside, aside>h4  {  /*especificidad  0 0 1 , 0 0 2*/ 
     grid-area: aside;
     border-radius: 2em;
     background-color: #FEA680;
     color: #000;
     font-size: 1.5em;
   }
-nav {
-  grid-area: nav;
-  font-size: 1.15em;
-  overflow: hidden;
-  background-color: #EFB810;
-}
-nav>a {
-  float: left;
-  display: block;
-  color: #000;
-  text-align: center;
-  padding: 2.5em 2em;
-  text-decoration: underline;
-}
+  nav {   /*especificidad  0 0 1*/
+    grid-area: nav;
+    font-size: 1.15em;
+    overflow: hidden;
+    background-color: #EFB810;
+  }
+  nav>a { /*especificidad  0 0 2*/
+    float: left;
+    display: block;
+    color: #000;
+    text-align: center;
+    padding: 2.5em 2em;
+    text-decoration: underline;
+  }
 
-nav>a:hover {
-  background-color: #000;
-  color: #FFF;
-}
+  nav>a:hover {/*especificidad  0 1 2*/
+    background-color: #000;
+    color: #FFF;
+  }
 
-table, th, tr{
-  border-bottom: 1px solid #ddd;
-}
-table tr:hover{
-  background-color: #01ABAA;
-}
+  th, td{ /*especificidad  0 0 1 para cada elemento*/
+    border-bottom: 1px solid #ddd;
+  }
+  tr:hover{/*especificidad  0 1 1*/
+    background-color: #01ABAA;
+  }
