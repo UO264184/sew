@@ -60,6 +60,11 @@ video { /*especificidad   0 0 1*/
   text-align: center;
 }
 
+section {
+  background-color: #000;
+  color: #FFF;
+}
+
 footer{ /*especificidad   0 0 1*/
   float: left;
   padding-top: 2em;
