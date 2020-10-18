@@ -2,7 +2,7 @@
       font: 400 15px "Courier New", sans-serif; /*Familia sans-serif*/
       line-height: 1.5;
       background-color: #000000;
-      color: #fff
+      color: #fff;
   }
 
   a{  /*especificidad  0 0 1*/
