@@ -37,6 +37,8 @@ header, h1{/*especificidad  0 0 1, 0 0 1*/
   box-sizing: content-box;
   width: 50%;
   float: left;
+  background-color: #000;
+  color: #FFF;
 }
 .recomend img {/*especificidad   0 1 1*/
   width: 20%;
@@ -58,6 +60,8 @@ video { /*especificidad   0 0 1*/
 
 #intro {  /*especificidad   1 0 0*/
   text-align: center;
+  background-color: #000;
+  color: #FFF;
 }
 
 section {
@@ -68,4 +72,6 @@ section {
 footer{ /*especificidad   0 0 1*/
   float: left;
   padding-top: 2em;
+  background-color: #000;
+  color: #FFF;
 }

@@ -43,7 +43,11 @@
   .argmt { grid-area: argmt; }  /*especificidad  0 1 0*/
   .prota { grid-area: prota; }  /*especificidad  0 1 0*/
   .ost { grid-area: ost; }      /*especificidad  0 1 0*/
-  footer { grid-area: footer; } /*especificidad  0 1 0*/
+  footer {  /*especificidad  0 1 0*/
+    grid-area: footer;
+    background-color: #000;
+    color: #FFF;
+  }
 
   aside, aside>h4  {  /*especificidad  0 0 1 , 0 0 2*/
     grid-area: aside;
@@ -76,8 +80,10 @@
     color: #FFF;
   }
 
-  th, td{ /*especificidad  0 0 1 para cada elemento*/
+  li, th, td{ /*especificidad  0 0 1 para cada elemento*/
     border-bottom: 1px solid #ddd;
+    background-color: #000;
+    color: #FFF;
   }
   tr:hover{/*especificidad  0 1 1*/
     background-color: #01ABAA;
