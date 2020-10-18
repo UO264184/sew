@@ -12,7 +12,7 @@
 
   h1, h2, h3, h4, h5, h6 { /*especificidad  0 0 1 para cada uno de los seis elementos*/
         background-color:#01ABAA;
-        color: #fff;
+        color: #000;
         text-transform: uppercase;
         padding: 25px 15px;
         text-align: left;
@@ -32,7 +32,7 @@
       "footer footer footer";
   }
 
-  header, header>h1 {/*especificidad  0 0 1 , 0 0 2*/ 
+  header, header>h1 {/*especificidad  0 0 1 , 0 0 2*/
      grid-area: title;
      color: #000;
      background-color: #EFB810;
@@ -45,13 +45,17 @@
   .ost { grid-area: ost; }      /*especificidad  0 1 0*/
   footer { grid-area: footer; } /*especificidad  0 1 0*/
 
-  aside, aside>h4  {  /*especificidad  0 0 1 , 0 0 2*/ 
+  aside, aside>h4  {  /*especificidad  0 0 1 , 0 0 2*/
     grid-area: aside;
     border-radius: 2em;
     background-color: #FEA680;
     color: #000;
     font-size: 1.5em;
   }
+  aside>ul>li>a { /*especificidad  0 0 4*/
+    color: #000;
+  }
+
   nav {   /*especificidad  0 0 1*/
     grid-area: nav;
     font-size: 1.15em;
